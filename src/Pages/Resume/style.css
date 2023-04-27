@@ -1,0 +1,262 @@
+:root {
+    --base-rem-size: 1rem;
+
+    --font-small: 8px;
+    --font-medium: 12px;
+    --font-large: 18px;
+    --font-x-large: 22px;
+    --font-xx-large: 32px;
+    --font-xxx-large: 48px;
+    --font-regular: 14px;
+
+    --all-transtion: all 0.25s ease;
+
+    --color-white: #fff;
+    --color-primary: #5bd6fe;
+    --color-primary-dark: #49aece;
+    --color-primary-light: #b3ecff;
+    --color-text: #f9dc93;
+
+    --color-background-grey: #000525;
+
+    --color-transparent: rgba(0,0,0,0);
+
+    --color-light-grey: #e5e5e5;
+    --color-grey: #bbbcbf;
+    --color-app-background: #4a4a4e;
+    --color-border-grey: #cacbe0;
+
+    --color-text-primary: #17181a;
+    --spacing-x-small: calc(var(--base-rem-size) * 0.25);
+    --spacing-small:   calc(var(--base-rem-size) * 0.5);
+    --spacing-medium:  calc(var(--base-rem-size) * 1);
+    --spacing-large:   calc(var(--base-rem-size) * 1.5);
+    --spacing-x-large: calc(var(--base-rem-size) * 2);
+    --spacing-xx-large: calc(var(--base-rem-size) * 3);
+
+    --box-shadow: 0 0 12px 0 rgb(0 0 0 / 10%), 0 10px 30px 0 rgb(0 0 0 / 20%);
+    --box-shadow-hover: 0 8px 4px -5px rgb(0 0 0 / 15%);
+
+    --border-radius: 12px;
+    --border-radius-small: 10px;
+
+    --font-family-headers: 'Roboto Slab', serif;
+    --font-family-body-text: 'Rubik', sans-serif;
+   
+
+}
+
+.blueBackground {
+    background: var(--color-blue);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex
+}
+
+.bodyText{
+    font-family: var(--font-family-headers);
+}
+
+.moduleSection {
+    margin-bottom: var(--spacing-xx-large);
+}
+
+.textRight {
+    text-align: right;
+}
+
+
+.resumePageContainer {
+   display: flex;
+   justify-content: center;
+   font-family: var(--font-family-body-text);
+}
+
+.resumePage {
+    width: 210mm;
+    height: 297mm;
+    background: var(--color-white);
+    display: flex;
+    font-size: var( --font-regular)
+}
+
+
+.resumePage .leftColumn {
+    width: 32%;
+    height: 100%;
+    background: var(--color-background-grey);
+    color: #eee;
+    padding: 5mm;
+}
+
+.resumePage .rightColumn {
+    width: 68%;
+    height: 100%;
+    background: var(--color-white);
+    padding: 5mm 5mm 5mm 3mm;
+}
+
+
+.name {
+    /* font-family: var(--font-family-headers); */
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: var(--spacing-small);
+    color: var( --color-primary);
+}
+
+.designation {
+    /* font-family: var(--font-family-headers); */
+    font-size: 19px;
+    margin-bottom: var(--spacing-medium)
+}
+
+.iconHeader {
+    display: flex;
+    align-items: self-end;
+    margin-bottom: var(--spacing-medium);
+}
+
+.iconHeader .icon{
+    font-size: var(--font-x-large);
+    margin-right: 10px;
+    color: var(--color-primary);
+}
+
+.iconHeader .header{
+    font-size: var(--font-large);
+    padding-bottom: 1px;
+    font-weight: 500;
+}
+
+
+.iconHeader.large {
+    display: flex;
+    align-items: self-end;
+    margin-bottom: var(--spacing-medium);
+}
+
+.iconHeader.large .icon{
+    font-size: var(--font-xx-large);
+    color: var(--color-primary-dark);
+    margin-right: 10px;
+}
+
+.iconHeader.large .header{
+    font-size: var(--font-xx-large);
+    padding-bottom: 1px;
+    font-weight: 500;
+}
+
+
+.personalDetailsField {
+    display: flex;
+    margin-bottom: var(--spacing-small);
+}
+
+.personalDetailsField .icon { width: 30px; color: var(--color-primary)}
+.personalDetailsField .label{ width: calc(100% - 30px); font-size: 14px}
+
+
+.summarySection .bodyText {
+    /* text-align: justify; */
+    line-height: 20px;
+}
+
+
+.educationWrapper {
+    margin-bottom: var(--spacing-small);
+}
+
+.educationSection .row {
+    margin-bottom: 2px;
+}
+
+.educationSection .row div {
+    width: 50%
+}
+
+.educationSection .courseAndScore {
+    font-size: 15px;
+    font-weight: 500;
+}
+.educationSection .boardAndDuration {
+    font-size: var(--font-medium);
+    font-style: italic;
+}
+
+
+
+.skillTag {
+    border: 1px solid var(--color-primary);
+    display: inline-flex;
+    padding: 3px 4px;
+    border-radius: 4px;
+    align-items: center;
+    font-family: var(--font-family-body-text);
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.skillTag .logo {
+    width: 20px;
+    height: 20px;
+}
+
+.skillTag .skillTagText {
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+.experienceRow {
+    padding-bottom: 22px;
+    padding-top: 8px;
+    padding-left: 3mm;
+    border-left: 2px solid var(--color-primary-light);
+    position: relative;
+}
+
+.experienceRow .row {
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13px;
+}
+
+.experienceRow .companyName {
+    color: var(--color-primary-dark);
+    font-size: var(--font-large);
+    font-weight: 500;
+}
+
+.experienceRow .companyName::before{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    background: var(--color-primary-dark);
+    left: -7px;
+    top: 14px;
+}
+
+.experienceRow .duration {
+    color: #555;
+}
+.experienceRow .role {
+    font-size: 14px;
+}
+.experienceRow .location {
+    color: #555;
+}
+.experienceRow .project {
+    margin: var(--spacing-medium) 0 var(--spacing-small);
+    font-weight: 500;
+}
+.experienceRow .details {
+    color: #555;
+}
